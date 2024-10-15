@@ -3,7 +3,7 @@ import {buildDriver} from '../config/selenium.config.js'
 import LoginPage from '../pages/loginPage.js';
 import InventoryPage from "../pages/inventoryPage.js";
 import {findElement} from "../utils/elemIterations.js";
-import {attachScreenshot} from "../utils/hooks.js";
+import {attachScreenshot, quitBrowser} from "../utils/hooksHelpers.js";
 
 describe('Inventory Suite', function () {
     let driver;
@@ -26,10 +26,10 @@ describe('Inventory Suite', function () {
 
     afterEach(async function () {
         await attachScreenshot.call(this, driver);
-        await driver.close()
+        await driver.close();
     });
 
     after(async function () {
-        await driver.quit();
+        await quitBrowser();
     });
 });
