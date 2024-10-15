@@ -1,26 +1,32 @@
-# Selenium JavaScript
+# Selenium sample project
 
-This repository contains JavaScript code for automated testing using Selenium. Selenium is a powerful tool for controlling web browsers through programs and performing browser automation.
+## Overview
+This project utilizes **Selenium** for browser automation and **Mocha** for running tests. The test results are reported using **Allure**, providing a comprehensive view of the test execution.
 
-## Features
+## Testing Frameworks
+- **Selenium**: For automated testing of web applications.
+- **Mocha**: JavaScript test framework for running tests.
+- **Allure**: Report generation tool to visualize test results.
 
-- **End-to-End Testing**: Automate and validate web applications.
-- **Easy Setup**: Quick installation and configuration.
-
-## Installation
-
-To get started, clone the repository and install the necessary dependencies:
-
-```bash
-git clone https://github.com/aragalstyan2000/selenium_js.git
-cd selenium_js
-npm install
-```
-
-## Usage
-
-To run the tests, use the following command:
+## Running Tests
+To execute the tests, use the following command:
 
 ```bash
 npm test
+```
+
+## Viewing Allure Reports
+To view the Allure reports, first run the tests to generate the report files, then use the following command:
+
+```bash
+npm run allure-serve
+```
+
+This will start a server and open the Allure report in your default web browser.
+
+## Dependencies
+Make sure to install the necessary dependencies:
+
+```bash
+npm install
 ```
