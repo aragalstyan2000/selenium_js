@@ -1,0 +1,23 @@
+{
+  "name": "selenium_js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "npx mocha e2e/tests/**/*.test.js --timeout 60000 --reporter mochawesome"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "chai": "^5.1.1",
+    "mocha": "^10.7.3",
+    "mochawesome": "^7.1.3",
+    "selenium-webdriver": "^4.25.0",
+    "webdriver-manager": "^12.1.9"
+  },
+  "mocha": {
+    "timeout": "30000"
+  }
+}
